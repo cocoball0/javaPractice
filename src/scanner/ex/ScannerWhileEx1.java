@@ -8,20 +8,17 @@ public class ScannerWhileEx1 {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("이름을 입력하세요:");
+            System.out.print("이름을 입력하세요:");
             String name = scanner.nextLine();
-
-            System.out.println("나이를 입력하세요:");
-            int age = scanner.nextInt();
-
-
-            scanner.nextLine();
             if (name.equals("END")) {
                 break;
-//                System.out.println("이름은 "+name +"나이는" + age);
-//                break;
-
             }
+            System.out.print("나이를 입력하세요:");
+            int age = scanner.nextInt();
+            scanner.nextLine();
+
+            System.out.println("이름은 " + name + "나이는" + age);
+
         }
 
     }
