@@ -11,7 +11,12 @@ public class ScannerWhileEx1 {
             System.out.print("이름을 입력하세요:");
             String name = scanner.nextLine();
             if (name.equals("END")) {
+                System.out.println("이름은 "+name +"나이는" + age);
                 break;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             }
             System.out.print("나이를 입력하세요:");
             int age = scanner.nextInt();
