@@ -1,4 +1,4 @@
-package school.array;
+package array;
 
 public class ArrayRf1 {
     public static void main(String[] args) {
