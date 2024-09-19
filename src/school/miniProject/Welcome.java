@@ -83,7 +83,7 @@ public class Welcome {
                         menuExit();
                         quit = true;
                     case 9:
-                        manuAdminLogin();
+                        menuAdminLogin();
                         break;
                 }
             }
