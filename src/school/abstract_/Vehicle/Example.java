@@ -1,4 +1,4 @@
-package school.abstract_;
+package school.abstract_.Vehicle;
 
 public class Example {
     public static void main(String[] args) {

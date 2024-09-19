@@ -1,4 +1,6 @@
-package school.abstract_;
+package school.abstract_.Vehicle;
+
+import FourWheeler;
 
 public class Car extends FourWheeler {
     public void printPrice() {

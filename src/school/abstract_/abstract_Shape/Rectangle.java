@@ -1,4 +1,4 @@
-package school.abstract_;
+package school.abstract_.abstract_Shape;
 
 public class Rectangle extends Shape {
     double length;
