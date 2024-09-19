@@ -1,7 +1,5 @@
 package school.abstract_.Vehicle;
 
-import FourWheeler;
-
 public class Car extends FourWheeler {
     public void printPrice() {
         System.out.println("가격:50000000");

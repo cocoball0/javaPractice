@@ -1,4 +1,4 @@
-package school.abstract_.abstract_Shape;
+package school.abstract_.Shape;
 
 public class Circle extends Shape {
     double radius;
