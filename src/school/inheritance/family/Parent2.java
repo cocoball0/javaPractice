@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.family;
 
 public class Parent2 {
     String name= "홍길순";

@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.parent;
 
 public class SubSon extends SubFather {
     void printSon() {

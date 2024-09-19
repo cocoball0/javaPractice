@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.parent;
 
 public class SubFather extends GrandFather {
     String familyName = "프로게이머 ";

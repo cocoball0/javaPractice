@@ -1,6 +1,6 @@
-package school.inheritance;
+package school.inheritance.Animal;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     void bark() {
         System.out.println("멍멍하고 짖다");
     }

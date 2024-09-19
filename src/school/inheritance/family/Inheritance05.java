@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.family;
 
 public class Inheritance05 {
     public static void main(String[] args) {

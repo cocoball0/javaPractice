@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.Animal;
 
 public class Pig extends Animal {
     public void animalSound() {

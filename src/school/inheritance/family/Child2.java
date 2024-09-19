@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.family;
 
 public class Child2 extends Parent2 {
     String name = "홍길동";

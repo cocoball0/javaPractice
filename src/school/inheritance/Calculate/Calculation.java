@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.Calculate;
 
 public class Calculation {
         int z;

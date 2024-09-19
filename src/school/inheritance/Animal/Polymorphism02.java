@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.Animal;
 
 public class Polymorphism02 {
     public static void main(String[] args) {

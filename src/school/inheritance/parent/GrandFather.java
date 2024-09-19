@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.parent;
 
 public class GrandFather {
     void printGrandFather() {

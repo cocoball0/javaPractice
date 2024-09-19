@@ -1,4 +1,4 @@
-package school.inheritance;
+package school.inheritance.Calculate;
 
 public class Inheritance01 extends Calculation {
     public void multiplcation(int x, int y) {
