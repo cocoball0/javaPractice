@@ -1,4 +1,6 @@
-package school.miniProject;
+package school.miniProject.com.market.Cart;
+
+import school.miniProject.com.market.bookitem.Book;
 
 public class CartItem {
     // 클래스로 자료형 선언

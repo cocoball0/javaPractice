@@ -1,4 +1,4 @@
-package school.miniProject;
+package school.miniProject.com.market.member;
 
 public class Admin extends Person {
     private String id = "Admin";

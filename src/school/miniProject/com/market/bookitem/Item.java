@@ -1,4 +1,4 @@
-package school.miniProject;
+package school.miniProject.com.market.bookitem;
 
 public abstract class Item {
     String bookId;

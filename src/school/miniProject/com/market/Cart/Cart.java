@@ -1,13 +1,16 @@
-package school.miniProject;
+package school.miniProject.com.market.Cart;
 
-public class Cart implements CartInterface{
+import school.miniProject.com.market.bookitem.Book;
+
+public class Cart implements CartInterface {
 
     static final int NUM_BOOK = 3;
     // CartItem 자료형 선언 = 객체 생성
     // itemBook(전체 책 정보), bookId(책id), quantity(책 수량), totalPrice(장바구니 총 가격)
-    CartItem[] mCartItem = new CartItem[NUM_BOOK];
+    public CartItem[] mCartItem = new CartItem[NUM_BOOK];
     // 클래스 내부에서 여러번 사용해야하므로 객체없이 값을 가져올 수 있는 static 변수 선언
-    static int mCartCount = 0;
+    public static int mCartCount = 0;
+    //book 패키지에서도 사용하기 위해서는 public을 붙혀줘야한다
 
     // 기본 생성자
     public Cart() {}

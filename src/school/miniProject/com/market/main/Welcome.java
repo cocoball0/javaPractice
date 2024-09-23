@@ -1,4 +1,12 @@
-package school.miniProject;
+package school.miniProject.com.market.main;
+
+import school.miniProject.com.market.Cart.Cart;
+import school.miniProject.com.market.bookitem.Book;
+import school.miniProject.com.market.member.Admin;
+import school.miniProject.com.market.member.Person;
+import school.miniProject.com.market.member.User;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import java.util.Scanner;
 
@@ -153,6 +161,27 @@ public class Welcome {
         }
     }
 
+
+
+    public static void printBill(String name, String phone, String address) {
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/YYYY");
+        String strDate = formatter.format(date);
+        System.out.println();
+        System.out.println("--------배송받을 고객 정보--------");
+        System.out.println("고객명 :" + name + "\t\t 연락처:" + phone);
+        System.out.println("배송지 :" + address + "\t\t발송일" + strDate);
+
+        mCart.printCart();
+
+        int sum = 0;
+        for (int i = 0; i < mCart.mCartCount; i++) {
+            sum += mCart.mCartItem[i].getTotalPrice();
+        }
+        System.out.println("\t\t\t주문 총금액 :" + sum + "원\n");
+        System.out.println("-----------------------------------------------------");
+        System.out.println();
+    }
     public static void menuCartRemoveItemCount() {
         System.out.println("아직 준비되지 않았습니다.");
     }
@@ -198,7 +227,28 @@ public class Welcome {
     }
 
     public static void menuCartBill() {
-        System.out.println("7. 영수증 표시하기");
+//        System.out.println("7. 영수증 표시하기");
+        if (mCart.mCartCount == 0) {
+            System.out.println("장바구니에 항목이 없습니다"); // 장바구니에 항목이 없는 경우
+        } else { //장바구니에 항목이 있는 경우
+            System.out.println("배송받을 분은 고객 정보와 같습니까? Y | N");
+            Scanner input = new Scanner(System.in);  //고객정보와 동일한 경우
+            String str = input.nextLine();
+
+            if (str.toUpperCase().equals("Y")) {
+                System.out.println("배송지를 입력해주세요");
+                String address = input.nextLine();
+                printBill(mUser.getName(),String.valueOf(mUser.getPhone()),address);
+            } else {  //고객 정보와 동일하지 않은 경우
+                System.out.println("배송받을 고객명을 입력하세요");
+                String name =input.nextLine();
+                System.out.println("배송받을 고객의 연락처를 입력하세요");
+                String phone = input.nextLine();
+                System.out.println("배송받을 고객의 배송지를 입력해주세요");
+                String address = input.nextLine();
+                printBill(name,phone,address);
+            }
+        }
     }
 
     public static void menuExit() {

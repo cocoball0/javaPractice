@@ -1,4 +1,4 @@
-package school.miniProject;
+package school.miniProject.com.market.member;
 
 public class User extends Person {
     public User(String name, int phone) {

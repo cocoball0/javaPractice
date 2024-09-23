@@ -1,4 +1,4 @@
-package school.miniProject;
+package school.miniProject.com.market.member;
 
 public class Person {
     private String name;

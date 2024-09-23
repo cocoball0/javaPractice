@@ -1,4 +1,4 @@
-package school.miniProject;
+package school.miniProject.com.market.bookitem;
 
 public class Book extends Item {
     private String author;

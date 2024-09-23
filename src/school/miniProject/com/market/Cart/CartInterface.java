@@ -1,4 +1,5 @@
-package school.miniProject;
+package school.miniProject.com.market.Cart;
+import school.miniProject.com.market.bookitem.Book;
 
 public interface CartInterface {
     void printBookList(Book[] p); // 도서 목록 출력
