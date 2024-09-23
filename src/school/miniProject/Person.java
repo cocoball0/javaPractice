@@ -15,19 +15,24 @@ public class Person {
         this.phone = phone;
         this.address = address;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public int getPhone() {
         return phone;
     }
+
     public void setPhone(int phone) {
         this.phone = phone;
     }
-    public  String getAddress() {
+
+    public String getAddress() {
         return address;
     }
 
