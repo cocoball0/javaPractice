@@ -1,8 +1,6 @@
 package school.File;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.File;
 import java.io.FileWriter;
 public class Example03 {
     public static void main(String[] args) {

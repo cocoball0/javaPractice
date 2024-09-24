@@ -2,7 +2,7 @@ package school.File;
 import java.io.File;
 public class FileHandling01 {
     public static void main(String[] args) {
-        File finfo = new File("C\\src\\Example01.txt");
+        File finfo = new File("C:\\src\\Example01.txt");
 
         if (finfo.exists()) {
             System.out.println("파일의 이름:" + finfo.getName());

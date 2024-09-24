@@ -5,7 +5,7 @@ public class Exception03 {
         int arr[] = {10, 20, 30};
 
         try{
-            for (int i = 0; i <= 3; i++) {
+            for (int i = 0; i < 3; i++) {
                 System.out.println("arr[" + i + "]: " + arr[i]);
             }
         } catch (Exception ex) {
