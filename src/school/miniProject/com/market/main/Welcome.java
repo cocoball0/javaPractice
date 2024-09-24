@@ -362,7 +362,21 @@ public class Welcome {
                 writeBook[5] = input.nextLine();
                 System.out.println("출판일 : ");
                 writeBook[6] = input.nextLine();
+                try{
+                    FileWriter fw = new FileWriter("book.txt",true);
+                    for (int i = 0; i < 7; i++) {
+                        fw.write(writeBook[i] + "\n");
 
+                    } fw.close();
+                    System.out.println("새 도서 정보가 저장되었습니다.");
+                    }catch(Exception e){
+                    System.out.println(e);
+                }
+            }else{
+                System.out.println("이름 "+admin.getName()+" 연락처 "+ admin.getPhone());
+                System.out.println("아이디 "+admin.getId()+" 비밀번호 "+ admin.getPassword());
+            }
+        }
         else {
             System.out.println("관리자 정보가 일치하지 않습니다.");
         }
