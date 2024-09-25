@@ -9,5 +9,6 @@ public class Scope2 {
         }//i 생존 종료
         System.out.println("main m = "+ m);
 //        System.out.println("main i = "+ i);
+        //dddddd
     }
 }
