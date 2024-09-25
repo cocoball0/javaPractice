@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ff609de-234c-4182-a01f-ab3e22916e87" name="변경" comment="File Study" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cocoball0&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cocoball0/javaPractice.git&quot;,
+    &quot;accountId&quot;: &quot;fb71ca67-8109-4e99-9302-fe9600450cd0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2loI7iPpTcnuWrjX60iRgQKRzJ9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AbstractClass01.executor": "Run",
+    "Application.AccessModifier01.executor": "Run",
+    "Application.Array01.executor": "Run",
+    "Application.Array02.executor": "Run",
+    "Application.Array03.executor": "Run",
+    "Application.Array04.executor": "Run",
+    "Application.Array05.executor": "Run",
+    "Application.Array06.executor": "Run",
+    "Application.Array07.executor": "Run",
+    "Application.ArrayEx1.executor": "Run",
+    "Application.ArrayEx2.executor": "Run",
+    "Application.ArrayEx3.executor": "Run",
+    "Application.ArrayEx4.executor": "Run",
+    "Application.ArrayEx5.executor": "Run",
+    "Application.ArrayEx6.executor": "Run",
+    "Application.Assign1.executor": "Run",
+    "Application.Calculation.executor": "Run",
+    "Application.ChangeVarEx.executor": "Run",
+    "Application.Collection01.executor": "Run",
+    "Application.Collection02.executor": "Run",
+    "Application.Collection03.executor": "Run",
+    "Application.Collection04.executor": "Run",
+    "Application.Collection05.executor": "Run",
+    "Application.Collection06.executor": "Run",
+    "Application.Collection07.executor": "Debug",
+    "Application.Comp1.executor": "Run",
+    "Application.Comp2.executor": "Run",
+    "Application.CondOp1.executor": "Run",
+    "Application.CondOp2.executor": "Run",
+    "Application.Construction02.executor": "Run",
+    "Application.Constructor03.executor": "Run",
+    "Application.Constructor4.executor": "Run",
+    "Application.EnhanceFor1.executor": "Run",
+    "Application.Example.executor": "Run",
+    "Application.Example01.executor": "Run",
+    "Application.Example02.executor": "Run",
+    "Application.Example03.executor": "Run",
+    "Application.Example04.executor": "Run",
+    "Application.Example05.executor": "Run",
+    "Application.Example06.executor": "Run",
+    "Application.Example07.executor": "Run",
+    "Application.Example08.executor": "Run",
+    "Application.Example09.executor": "Run",
+    "Application.Example10.executor": "Run",
+    "Application.Example11.executor": "Run",
+    "Application.Example12.executor": "Run",
+    "Application.Exception01.executor": "Run",
+    "Application.Exception02.executor": "Run",
+    "Application.Exception03.executor": "Run",
+    "Application.Exception04.executor": "Run",
+    "Application.Exception05.executor": "Run",
+    "Application.Exmaple01.executor": "Run",
+    "Application.Exmaple02.executor": "Run",
+    "Application.Exmaple03.executor": "Run",
+    "Application.Exmaple05.executor": "Run",
+    "Application.FileHandling01.executor": "Run",
+    "Application.FileHandling02.executor": "Run",
+    "Application.FileHandling03.executor": "Run",
+    "Application.FileHandling05.executor": "Run",
+    "Application.If1.executor": "Run",
+    "Application.Inheritance01.executor": "Run",
+    "Application.Inheritance05.executor": "Run",
+    "Application.Inheritance06.executor": "Run",
+    "Application.Inheritance2.executor": "Run",
+    "Application.Interface01.executor": "Run",
+    "Application.Interface02.executor": "Debug",
+    "Application.Logical1.executor": "Run",
+    "Application.Logical2.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Object01.executor": "Run",
+    "Application.Package01.executor": "Run",
+    "Application.Package02.executor": "Run",
+    "Application.Package04.executor": "Run",
+    "Application.Package05.executor": "Run",
+    "Application.Package07.executor": "Run",
+    "Application.Package08.executor": "Run",
+    "Application.Package09.executor": "Run",
+    "Application.Package10.executor": "Run",
+    "Application.Package11.executor": "Run",
+    "Application.Package12.executor": "Run",
+    "Application.Polymorphism01 (1).executor": "Run",
+    "Application.Polymorphism01 (2).executor": "Run",
+    "Application.Polymorphism01.executor": "Run",
+    "Application.Polymorphism02.executor": "Run",
+    "Application.ScannerEx5.executor": "Run",
+    "Application.ScannerWhileEx1.executor": "Run",
+    "Application.Switch1.executor": "Run",
+    "Application.Switch2.executor": "Run",
+    "Application.Welcome.executor": "Run",
+    "Application.condQuestion1.executor": "Run",
+    "Application.condQuestion2.executor": "Run",
+    "Application.condQuestion3.executor": "Run",
+    "Application.condQuestion4.executor": "Run",
+    "Application.condQuestion5.executor": "Run",
+    "Application.condQuestion6.executor": "Run",
+    "Application.condQuestion7.executor": "Run",
+    "Application.if04.executor": "Run",
+    "Application.if2.executor": "Run",
+    "Application.if4.executor": "Run",
+    "Application.if5.executor": "Run",
+    "Application.if6.executor": "Run",
+    "Application.inheritance03.executor": "Run",
+    "Application.loopQuestion_1.executor": "Run",
+    "Application.loopQuestion_2.executor": "Run",
+    "Application.loopQuestion_3.executor": "Run",
+    "Application.loopQuestion_4.executor": "Run",
+    "Application.loopQuestion_5.executor": "Run",
+    "Application.method1.executor": "Run",
+    "Application.method2.executor": "Run",
+    "Application.method3.executor": "Run",
+    "Application.method4.executor": "Run",
+    "Application.method5.executor": "Run",
+    "Application.method6.executor": "Run",
+    "Application.miniProject.executor": "Run",
+    "Application.operater1.executor": "Run",
+    "Application.operater2.executor": "Run",
+    "Application.operater3.executor": "Run",
+    "Application.operater4.executor": "Run",
+    "Application.operaterAdd1.executor": "Run",
+    "Application.operatorAdd2.executor": "Run",
+    "Application.operatorQuestion1.executor": "Run",
+    "Application.operatorQuestion2.executor": "Run",
+    "Application.operatorQuestion3.executor": "Run",
+    "Application.school.method.method3.executor": "Run",
+    "Application.school.miniProject.Welcome.executor": "Run",
+    "Application.update.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/src/src/school/miniProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="school.miniProject.CartInterface.java" />
+      <recent name="school.miniProject" />
+      <recent name="school.miniProject.CartInterface" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\src\src\school\miniProject" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="school.arrayList" />
+      <recent name="school.method" />
+      <recent name="cond" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Welcome">
+    <configuration name="Collection06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.arrayList.Collection06" />
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.arrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collection07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.arrayList.Collection07" />
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.arrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.arrayList.Example06" />
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.arrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.arrayList.Example07" />
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.arrayList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Welcome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.miniProject.com.market.main.Welcome" />
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.miniProject.com.market.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Welcome" />
+        <item itemvalue="Application.Collection07" />
+        <item itemvalue="Application.Example07" />
+        <item itemvalue="Application.Collection06" />
+        <item itemvalue="Application.Example06" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="8ff609de-234c-4182-a01f-ab3e22916e87" name="변경" comment="" />
+      <created>1725839838843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725839838843</updated>
+    </task>
+    <task id="LOCAL-00001" summary="File Study">
+      <option name="closed" value="true" />
+      <created>1727161913345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727161913346</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="변경" />
+    <MESSAGE value="File Study" />
+    <option name="LAST_COMMIT_MESSAGE" value="File Study" />
+  </component>
+</project>
