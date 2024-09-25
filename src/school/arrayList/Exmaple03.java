@@ -1,23 +1,27 @@
 package school.arrayList;
-import java.util.LinkedList;
-public class Example02 {
+import java.util.Vector;
+
+public class Exmaple03 {
     public static void main(String[] args) {
-        LinkedList<String> cats = new LinkedList<String>();
-        cats.add("러시안 블루");
-        cats.addFirst("페르시안");
-        cats.addLast("래그들");
+        Vector<String> cats = new Vector<String>();
+
+        cats.add("페르시안");
+        cats.add("null");
         System.out.println(cats);
+
         cats.add(1, "샴");
         System.out.println(cats);
 
-        cats.set(2, "코리안 쇼트헤어");
+        cats.add(2, "러시안 블루");
         System.out.println(cats);
 
-        cats.removeFirst();
-        cats.removeLast();
+        cats.remove("페르시안");
         System.out.println(cats);
+
         cats.remove(1);
-        System.out.println(cats);
+        System.out.println(cats );
+
+
         System.out.println(cats.size());
         System.out.println(cats.get(0));
         System.out.println(cats.contains("샴"));

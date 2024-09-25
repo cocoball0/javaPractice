@@ -1,10 +1,7 @@
 package school.miniProject.com.market.main;
-import school.abstract_.Vehicle.Car;
-import school.miniProject.com.market.Cart.CartItem;
 import school.miniProject.com.market.exception.CartException;
-import school.miniProject.com.market.Cart.Cart;
+import school.miniProject.com.market.cart.Cart;
 import school.miniProject.com.market.bookitem.Book;
-import school.miniProject.com.market.exception.CartException;
 import school.miniProject.com.market.member.Admin;
 import school.miniProject.com.market.member.Person;
 import school.miniProject.com.market.member.User;
@@ -13,6 +10,7 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.io.FileReader;
 import java.io.BufferedReader;
 
@@ -24,7 +22,8 @@ public class Welcome {
 
     public static void main(String[] args) {
 //        Book[] mBookList = new Book[NUM_BOOK];
-        Book[]mBookList;
+//        Book[]mBookList;
+        ArrayList<Book>mBookList;
         int mTotalBook = 0;
         Scanner input = new Scanner(System.in);
         System.out.print("당신의 이름을 입력하세요: ");
@@ -63,7 +62,7 @@ public class Welcome {
                              break;
                          case 4:
                              mTotalBook = totalFileTobookList();
-                             mBookList = new Book[mTotalBook];
+                             mBookList = new ArrayList<Book>();
                              menuCartAddItem(mBookList);
                              break;
                          case 5:
@@ -106,7 +105,8 @@ public class Welcome {
 
     public static void menuGuestInfo(String name, int mobile) {
         Person person = new Person(name, mobile);
-        System.out.println("이름 "+mUser.getName()+" 연락처 "+mUser.getPhone());
+        System.out.println("이름 "+mUser.getName());
+        System.out.println("연락처 "+mUser.getPhone());
     }
 
     public static void menuCartItemList() {
@@ -132,7 +132,7 @@ public class Welcome {
         }
     }
 
-    public static void menuCartAddItem(Book[] booklist) {
+    public static void menuCartAddItem(ArrayList<Book> booklist) {
         // 책 목록 가져오기
         BookList(booklist);
         mCart.printBookList(booklist);
@@ -150,8 +150,8 @@ public class Welcome {
             int numId = -1; // 해당 도서의 index 번호를 받을 변수
 
 
-            for (int i = 0; i < NUM_BOOK; i++) {
-                if (str.equals(booklist[i].getBookId())) { //ID가 i번의 책 ID가 같은 경우
+            for (int i = 0; i < booklist.size(); i++) {
+                if (str.equals(booklist.get(i).getBookId())) { //ID가 i번의 책 ID가 같은 경우
                     numId = i;
                     flag = true;
                     break;
@@ -163,10 +163,10 @@ public class Welcome {
                 str = input.nextLine();
 
                 if (str.toUpperCase().equals("Y")) {
-                    System.out.println(booklist[numId].getBookId() + " 도서가 장바구니에 추가되었습니다.");
+                    System.out.println(booklist.get(numId).getBookId() + " 도서가 장바구니에 추가되었습니다.");
 
-                    if(!isCartInBook(booklist[numId].getBookId())) {
-                        mCart.insertBook(booklist[numId]);
+                    if(!isCartInBook(booklist.get(numId).getBookId())) {
+                        mCart.insertBook(booklist.get(numId));
                     }
                 }
 
@@ -202,14 +202,14 @@ public class Welcome {
         return 0;
     }
 
-    public static void setFileToBookList(Book[] bookList) {
+    public static void setFileToBookList(ArrayList<Book> bookList) {
         try {
             FileReader fr = new FileReader("book.txt");
             BufferedReader reader = new BufferedReader(fr);
 
             String str2;
             String[] readBook = new String[7];
-            int cnt = 0;
+//            int cnt = 0;
 
             while ((str2 = reader.readLine()) != null) {
                 if (str2.contains("ISBN")) {
@@ -221,7 +221,9 @@ public class Welcome {
                     readBook[5] = reader.readLine();
                     readBook[6] = reader.readLine();
                 }
-                bookList[cnt++] = new Book(readBook[0], readBook[1], Integer.parseInt(readBook[2]), readBook[3], readBook[4], readBook[5], readBook[6]);
+//                bookList[cnt++] = new Book(readBook[0], readBook[1], Integer.parseInt(readBook[2]), readBook[3], readBook[4], readBook[5], readBook[6]);
+                Book bookitem = new Book(readBook[0],readBook[1],Integer.parseInt(readBook[2]),readBook[3],readBook[4],readBook[5],readBook[6]);
+                bookList.add(bookitem);
             }
             reader.close();
             fr.close();
@@ -244,7 +246,7 @@ public class Welcome {
 
         int sum = 0;
         for (int i = 0; i < mCart.mCartCount; i++) {
-            sum += mCart.mCartItem[i].getTotalPrice();
+            sum += mCart.mCartItem.get(i).getTotalPrice();
         }
         System.out.println("\t\t\t주문 총금액 :" + sum + "원\n");
         System.out.println("-----------------------------------------------------");
@@ -254,6 +256,34 @@ public class Welcome {
 //        System.out.println("아직 준비되지 않았습니다.");
         if(mCart.mCartCount == 0)
             throw new CartException("장바구니에 항목이 없습니다");
+        else{
+            menuCartItemList();
+            boolean quit =false;
+            while (!quit) {
+                System.out.println("장바구니에서 삭제할 도서의 ID를 입력하세요:");
+                Scanner input = new Scanner(System.in);
+                String str = input.nextLine();
+                boolean flag = false;
+                int numId = -1;
+
+                for (int i = 0; i < mCart.mCartCount; i++) {
+                    if (str.equals(mCart.mCartItem.get(i).getBookID())) {
+                        numId = i;
+                        flag =true;
+                        break;
+                    }
+                }
+                if (flag) {
+                    System.out.println("장바구니의 항목을 삭제하겠습니까? Y | N");
+                    str =input.nextLine();
+                    if (str.toUpperCase().equals("Y")) {
+                        System.out.println(mCart.mCartItem.get(numId).getBookID()+"도서가 장바구니에서 삭제되었습니다.");
+                        mCart.removeCart(numId);
+                    }
+                    quit=true;
+                }else System.out.println("다시 입력해주시오");
+            }
+        }
     }
 
 
@@ -275,7 +305,7 @@ public class Welcome {
                 int numId = -1;
 
                 for (int i = 0; i < mCart.mCartCount; i++) {
-                    if (str.equals(mCart.mCartItem[i].getBookID())) {
+                    if (str.equals(mCart.mCartItem.get(i).getBookID())) {
                         numId = i;
                         flag = true;
                         break;
@@ -287,7 +317,7 @@ public class Welcome {
                     System.out.println("장바구니에 항목을 삭제하겠습니까? Y | N ");
                     str = input.nextLine(); // 항목 삭제 여부 입력받아 저장
                     if (str.toUpperCase().equals("Y")) {
-                        System.out.println(mCart.mCartItem[numId].getBookID() + " 장바구니에서 도서가 삭제되었습니다.");
+                        System.out.println(mCart.mCartItem.get(numId).getBookID() + " 장바구니에서 도서가 삭제되었습니다.");
                         mCart.removeCart(numId);
                     }
                     quit = true;
@@ -382,7 +412,7 @@ public class Welcome {
         }
     }
 
-    public static void BookList(Book[] booklist) {
+    public static void BookList(ArrayList<Book> booklist) {
         setFileToBookList(booklist);
 //        booklist[0] = new Book("ISBN1234", "모순", 27000);
 //        booklist[0].setAuthor("양귀자");

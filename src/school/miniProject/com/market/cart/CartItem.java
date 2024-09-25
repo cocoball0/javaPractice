@@ -1,4 +1,4 @@
-package school.miniProject.com.market.Cart;
+package school.miniProject.com.market.cart;
 
 import school.miniProject.com.market.bookitem.Book;
 
