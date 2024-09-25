@@ -26,6 +26,7 @@ public class Welcome {
         ArrayList<Book>mBookList;
         int mTotalBook = 0;
         Scanner input = new Scanner(System.in);
+        System.out.println("hello world");
         System.out.print("당신의 이름을 입력하세요: ");
         String userName = input.next();
         System.out.print("연락처를 입력하세요: ");
@@ -372,6 +373,7 @@ public class Welcome {
         if (adminId.equals(admin.getId()) && adminPW.equals(admin.getPassword())) {
             String[]writeBook = new String[7];
             System.out.println("도서 정보를 추가하겠습니까? Y | N");
+            System.out.println("zzzzz");
             String str = input.next();
             if(str.toUpperCase().equals("Y")){
                 Date date = new Date();
